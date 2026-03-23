@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /editorial/style.css
+
+Sitemap: https://onlysif.com/sitemap.xml

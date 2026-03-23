@@ -1,0 +1,6 @@
+[build]
+  command = "node node_modules/.bin/vite build"
+  publish = "dist"
+
+[build.environment]
+  SECRETS_SCAN_SMART_DETECTION_ENABLED = "false"

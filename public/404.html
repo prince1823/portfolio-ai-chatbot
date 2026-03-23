@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — file not found</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      height: 100%;
+      background: #0b0b09;
+      font-family: 'JetBrains Mono', 'Fira Mono', monospace;
+      color: #858585;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+    .terminal {
+      max-width: 480px;
+      width: 100%;
+    }
+    .line { margin-bottom: 6px; font-size: 13px; line-height: 1.6; }
+    .prompt { color: #4fc1ff; }
+    .error { color: #f44747; }
+    .dim { color: #555; }
+    .link {
+      display: inline-block;
+      margin-top: 24px;
+      color: #4fc1ff;
+      text-decoration: none;
+      font-size: 13px;
+      border-bottom: 1px solid #4fc1ff44;
+      padding-bottom: 2px;
+      transition: border-color 0.2s;
+    }
+    .link:hover { border-color: #4fc1ff; }
+    .cursor {
+      display: inline-block;
+      width: 8px;
+      height: 14px;
+      background: #858585;
+      vertical-align: middle;
+      animation: blink 1s step-start infinite;
+    }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+</head>
+<body>
+  <div class="terminal">
+    <div class="line"><span class="prompt">asif@portfolio</span><span class="dim">:~$</span> ls <span id="reqPath"></span></div>
+    <div class="line error">ls: cannot access that path: No such file or directory</div>
+    <div class="line dim">exit code 1</div>
+    <div class="line" style="margin-top:16px;"><span class="prompt">asif@portfolio</span><span class="dim">:~$</span> <span class="cursor"></span></div>
+    <a class="link" href="/">cd ~/portfolio</a>
+  </div>
+  <script>
+    const p = window.location.pathname;
+    document.getElementById('reqPath').textContent = p;
+  </script>
+</body>
+</html>
