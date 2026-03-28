@@ -1,8 +1,4 @@
-# onlysif portfolio
 
-A macOS Finder-style personal portfolio site. Built with Vite + vanilla JS.
-
-**Live at:** [onlysif.com](https://onlysif.com)
 
 ## What's in here
 
