@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prince Saxena — Resume</title>
+<style>
+  @media print {
+    body { margin: 0; padding: 0; }
+    .no-print { display: none !important; }
+    @page { margin: 0.5in; }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
+    line-height: 1.5;
+    background: #fff;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 48px;
+    font-size: 13px;
+  }
+  .header { text-align: center; margin-bottom: 20px; border-bottom: 2px solid #1a1a1a; padding-bottom: 16px; }
+  .header h1 { font-size: 28px; font-weight: 700; letter-spacing: 1px; margin-bottom: 4px; }
+  .header .subtitle { font-size: 14px; color: #555; margin-bottom: 8px; }
+  .header .links { font-size: 12px; color: #444; }
+  .header .links a { color: #1a1a1a; text-decoration: none; }
+  .header .links span { margin: 0 6px; color: #999; }
+  h2 { font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; border-bottom: 1px solid #ccc; padding-bottom: 4px; margin: 18px 0 10px; }
+  h3 { font-size: 13px; font-weight: 600; margin-bottom: 2px; }
+  .role-line { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2px; }
+  .role-line .date { font-size: 12px; color: #666; font-style: italic; }
+  .company { font-size: 12px; color: #555; margin-bottom: 4px; }
+  ul { padding-left: 18px; margin-bottom: 8px; }
+  li { margin-bottom: 2px; }
+  .skills-grid { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  .skills-grid .skill-cat { font-weight: 600; }
+  .project-title { font-weight: 600; }
+  .project-tech { font-size: 12px; color: #666; }
+  .download-bar {
+    position: fixed; bottom: 0; left: 0; right: 0;
+    background: #1a1a1a; color: #fff; text-align: center;
+    padding: 12px; font-size: 14px; z-index: 100;
+  }
+  .download-bar button {
+    background: #fff; color: #1a1a1a; border: none; padding: 8px 24px;
+    font-size: 14px; font-weight: 600; border-radius: 4px; cursor: pointer;
+    margin-left: 12px;
+  }
+  .download-bar button:hover { background: #e0e0e0; }
+</style>
+</head>
+<body>
+
+<div class="download-bar no-print">
+  To save as PDF: press <strong>Ctrl+P</strong> (or Cmd+P on Mac) → "Save as PDF"
+  <button onclick="window.print()">Print / Save PDF</button>
+</div>
+
+<div class="header">
+  <h1>PRINCE SAXENA</h1>
+  <div class="subtitle">Full-Stack Developer &amp; AI Engineer</div>
+  <div class="links">
+    <a href="mailto:psaxena9059@gmail.com">psaxena9059@gmail.com</a>
+    <span>|</span>
+    <a href="https://github.com/prince1823">github.com/prince1823</a>
+    <span>|</span>
+    <a href="https://linkedin.com/in/prince-saxena-8b5426244">LinkedIn</a>
+    <span>|</span>
+    India
+  </div>
+</div>
+
+<h2>Experience</h2>
+
+<div class="role-line">
+  <h3>AI Engineer</h3>
+  <span class="date">June 2024 — Present</span>
+</div>
+<div class="company">Cloop.ai</div>
+<ul>
+  <li>Built and improved <strong>WhatsApp Superhuman</strong> — an AI assistant that understands chat context and assists users with intelligent actions using LLMs and OpenAI APIs.</li>
+  <li>Designed the <strong>Promises feature</strong> — auto-extracts to-do items from WhatsApp chats, classifies tasks by sender/recipient, supports English, Hindi, and Hinglish with zero duplicate tolerance.</li>
+  <li>Focused on prompt engineering and LLM behavior tuning for multilingual, informal conversations. Iteratively tested prompts, evaluated failures, and improved classification reliability.</li>
+  <li>Collaborated closely with product and engineering teams to ship features end-to-end.</li>
+</ul>
+
+<div class="role-line">
+  <h3>Web Development Intern</h3>
+  <span class="date">June — September 2024</span>
+</div>
+<div class="company">Explorin Academy</div>
+<ul>
+  <li>Collaborated with senior engineers on MERN stack projects, improving performance, scalability, and responsiveness.</li>
+  <li>Designed and implemented RESTful APIs for production applications.</li>
+  <li>Optimized database queries to enhance data retrieval efficiency across React + Node + Express + MongoDB stack.</li>
+</ul>
+
+<h2>Projects</h2>
+
+<div style="margin-bottom: 8px;">
+  <span class="project-title">MealRush</span> <span class="project-tech">— React, Node, Express, Tailwind | meal-rush-07.vercel.app</span><br>
+  Full MERN stack food delivery app with Swiggy API integration, config-driven UI, dynamic search by name/cuisine/ratings. Deployed on Vercel with CI/CD.
+</div>
+
+<div style="margin-bottom: 8px;">
+  <span class="project-title">AerthAI</span> <span class="project-tech">— React, Node, Express, Supabase, Tailwind</span><br>
+  Full-stack AI chatbot for crypto trading using DeepSeek API. Real-time buy/sell operations, session management via Supabase, dark/light mode.
+</div>
+
+<div style="margin-bottom: 8px;">
+  <span class="project-title">Medium 2.O</span> <span class="project-tech">— React, Redux, Tailwind, Node | medium-clone-gamma-seven.vercel.app</span><br>
+  Responsive Medium clone with Redux for global state management, reusable component architecture. Deployed on Vercel.
+</div>
+
+<div style="margin-bottom: 8px;">
+  <span class="project-title">WhatsApp To-Do Extractor</span> <span class="project-tech">— Python, Flask, LLM APIs, Regex</span><br>
+  Extracts actionable tasks from WhatsApp chat exports using LLM-based prompt engineering. Handles multilingual data (EN/HI/Hinglish). Directly inspired the production Promises feature at Cloop.
+</div>
+
+<div style="margin-bottom: 8px;">
+  <span class="project-title">Audio Classification EDA</span> <span class="project-tech">— TensorFlow, Keras, Librosa, PyDub, Pandas</span><br>
+  End-to-end audio classification pipeline with MFCC feature extraction and hyperparameter tuning. Achieved <strong>87% test accuracy</strong>.
+</div>
+
+<div style="margin-bottom: 8px;">
+  <span class="project-title">ODI Cricket Analysis</span> <span class="project-tech">— NumPy, Pandas, Matplotlib, Seaborn</span><br>
+  Exploratory data analysis on Sachin Tendulkar's ODI career stats with data cleaning and visualization.
+</div>
+
+<h2>Skills</h2>
+
+<div class="skills-grid" style="margin-bottom: 6px;">
+  <div><span class="skill-cat">Languages:</span> JavaScript, Python, C/C++</div>
+</div>
+<div class="skills-grid" style="margin-bottom: 6px;">
+  <div><span class="skill-cat">Frontend:</span> React, Redux, Tailwind CSS, HTML/CSS</div>
+</div>
+<div class="skills-grid" style="margin-bottom: 6px;">
+  <div><span class="skill-cat">Backend:</span> Node.js, Express, Flask</div>
+</div>
+<div class="skills-grid" style="margin-bottom: 6px;">
+  <div><span class="skill-cat">Databases:</span> MongoDB, Supabase, Firebase</div>
+</div>
+<div class="skills-grid" style="margin-bottom: 6px;">
+  <div><span class="skill-cat">ML/AI:</span> TensorFlow, Keras, Librosa, PyTorch, NLP, OpenAI APIs, Prompt Engineering</div>
+</div>
+<div class="skills-grid" style="margin-bottom: 6px;">
+  <div><span class="skill-cat">Tools:</span> Git, GitHub, Vercel, Netlify, VS Code, Jupyter, Figma, Claude Code</div>
+</div>
+
+<h2>Education</h2>
+
+<div class="role-line">
+  <h3>B.Tech in Computer Science</h3>
+  <span class="date">2021 — 2025</span>
+</div>
+<div class="company">Dr. A.P.J Abdul Kalam Technical University (AKTU)</div>
+<ul>
+  <li>Relevant Coursework: Data Structures & Algorithms, MERN Stack Development, Machine Learning, Data Analytics, Operating Systems, C++ Programming</li>
+</ul>
+
+<h2>Leadership</h2>
+
+<div class="role-line">
+  <h3>Senior Most Coordinator — Hobbies Club</h3>
+  <span class="date">October 2021 — 2025</span>
+</div>
+<div class="company">AKTU University</div>
+<ul>
+  <li>Led a team of 17 members, organized 35+ events over 3+ years.</li>
+  <li>Demonstrated communication and leadership skills, efficiently delegating tasks to maximize team productivity.</li>
+</ul>
+
+</body>
+</html>

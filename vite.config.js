@@ -1,6 +1,6 @@
 export default {
   server: {
     open: true,
-    port: 5173,
+    port: 5178,
   },
 };
