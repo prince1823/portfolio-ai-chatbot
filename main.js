@@ -1730,7 +1730,7 @@ function renderChat() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'openai/gpt-4o-mini',
+          model: 'google/gemini-2.0-flash-exp:free',
           messages,
           temperature: 0.8,
           max_tokens: 1024,
