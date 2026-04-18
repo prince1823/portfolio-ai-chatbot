@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "vite": "^8.0.1"
+  },
+  "devDependencies": {
+    "netlify-cli": "^25.0.1"
   }
 }
