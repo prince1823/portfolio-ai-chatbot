@@ -1730,7 +1730,7 @@ function renderChat() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          model: 'google/gemini-2.0-flash-exp:free',
+          model: 'google/gemini-2.5-flash',
           messages,
           temperature: 0.8,
           max_tokens: 1024,
